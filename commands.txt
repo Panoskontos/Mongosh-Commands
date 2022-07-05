@@ -7,3 +7,7 @@ db.table_name.insertOne({name:"Panos"})
 show collections
 
 db.table_name.find()
+
+Basic Query
+
+db.table_name.find({name:"Nick"})
