@@ -45,3 +45,18 @@ db.table.updateOne( {_id: ... }, {$set:{age:56} })
 When you want to update many
 db.table.updateMany({age:45},{$set:{age:25} })  
 
+
+------------ Delete Data --------------
+
+delete 1
+db.table.deleteOne({name:"Panos"})  
+
+delete many
+db.table.deleteMany({age:25}) 
+
+delete Table
+db.table.drop()
+
+delete Database
+db.dropDatabase()
+
