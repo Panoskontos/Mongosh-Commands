@@ -30,6 +30,18 @@ db.table.find({ name: {$ne:"Sa"} })
 age >= 25
 db.table.find({ age: { $gte: 25 } })  
 
-in array of names
-
+is in array of names
 db.table.find({ name: { $in: ["Sally","Panos"] } })  
+
+ 
+
+ ---------- Update Data ---------------
+
+db.table.updateOne({age:25},{$set:{birth:1997} }) 
+
+Generally you want to update by id
+db.table.updateOne( {_id: ... }, {$set:{age:56} })
+
+When you want to update many
+db.table.updateMany({age:45},{$set:{age:25} })  
+
