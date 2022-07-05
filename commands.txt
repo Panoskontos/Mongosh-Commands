@@ -3,21 +3,21 @@ show dbs
 use newdb
 show collections
 
-db.table_name.insertOne({name:"Panos"})  
+db.table.insertOne({name:"Panos"})  
 show collections
 
-db.table_name.find()
+db.table.find()
 
 ---------Basic Query Commands--------
 
-db.table_name.find({name:"Nick"})
+db.table.find({name:"Nick"})
 
-db.table_name.find().limit(2)
+db.table.find().limit(2)
 
-db.table_name.find().sort({ name:+1 }).limit(2)
+db.table.find().sort({ name:+1 }).limit(2)
 
 show me only name without id
-db.table_name.find({name:"Nick"},{name:1,_id:0})
+db.table.find({name:"Nick"},{name:1,_id:0})
 
 
 
@@ -29,3 +29,7 @@ db.table.find({ name: {$ne:"Sa"} })
 
 age >= 25
 db.table.find({ age: { $gte: 25 } })  
+
+in array of names
+
+db.table.find({ name: { $in: ["Sally","Panos"] } })  
