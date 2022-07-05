@@ -1,0 +1,9 @@
+mongosh
+show dbs
+use newdb
+show collections
+
+db.table_name.insertOne({name:"Panos"})  
+show collections
+
+db.table_name.find()
