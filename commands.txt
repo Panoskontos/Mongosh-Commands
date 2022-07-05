@@ -8,6 +8,13 @@ show collections
 
 db.table_name.find()
 
-Basic Query
+---------Basic Query Commands--------
 
 db.table_name.find({name:"Nick"})
+
+db.table_name.find().limit(2)
+
+db.table_name.find().sort({ name:+1 }).limit(2)
+
+show me only name without id
+db.table_name.find({name:"Nick"},{name:1,_id:0})
