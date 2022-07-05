@@ -60,3 +60,6 @@ db.table.drop()
 delete Database
 db.dropDatabase()
 
+
+
+exit or Ctrl + D
