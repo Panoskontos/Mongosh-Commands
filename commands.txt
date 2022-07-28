@@ -1,6 +1,5 @@
 mongosh
 
-
 show dbs
 use newdb
 show collections
